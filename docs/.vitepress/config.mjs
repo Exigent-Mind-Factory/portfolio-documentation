@@ -3,8 +3,9 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Documentation Title",
-  description: "Documentation Description", 
+  description: "Documentation Description",
   appearance: "dark",
+  base: "/portfolio_documentation/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -117,14 +118,12 @@ export default defineConfig({
                 },
               ],
             },
-           /*  { text: "Code Level", link: "/trd/code-level" }, */
+            /*  { text: "Code Level", link: "/trd/code-level" }, */
           ],
         },
         {
           text: "Runtime view",
-          items: [
-            { text: "Runtime view", link: "/trd/runtime-view" },
-          ],
+          items: [{ text: "Runtime view", link: "/trd/runtime-view" }],
         },
         {
           text: "Deployment view",
@@ -166,7 +165,7 @@ export default defineConfig({
             },
           ],
         },
-     /*    {
+        /*    {
           text: "Glossary",
           items: [{ text: "Glossary", link: "/trd/glossary" }],
         }, */
